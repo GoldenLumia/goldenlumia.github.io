@@ -1,1 +1,59 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a:visited{
+            color:blue;
+        }
+        .hidden{
+            display: none;
+        }
+
+        .w-50{
+            width: 50%;
+        }
+
+        .w-75{
+            width: 75%;
+        }
+
+        .mb-10{
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleImage(){
+        document.querySelector('#image').classList.toggle('hidden');
+        document.getElementById("button").toggleAttribute('hidden');
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:black;">
+
+<img src="img/header.jpg" title="Hey! I might change the text here from time to time. I think some web comics communicate this way as well. I'm far less interesting. But I'm also not telling anybody. Let's keep this a secret, capeesh? My wifes in the mob, she'll get ya. Imagine 'Woke Up This Morning' playing while I say this."/>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><a href="https://twitter.com/goldenlumia/">Twitter</a></h1>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><a href="https://bsky.app/profile/golden.yuri.cool">Bluesky</a></h1>
+<br>
+<button onClick="toggleImage()" class="w-50 mb-10">Have you seen her?</button>
+
+<img src="img/seeher.png" id="image" class="hidden w-75"/>
+<h1 hidden id="button" style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;">Now you have!</h1>
+</body>
+</html>
