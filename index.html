@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golden Lumia</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        h3 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a:visited{
+            color:blue;
+        }
+        .hidden{
+            display: none;
+        }
+
+        .w-50{
+            width: 50%;
+        }
+
+        .w-75{
+            width: 75%;
+        }
+
+        .mb-10{
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleImage(){
+        document.querySelector('#image').classList.toggle('hidden');
+        document.getElementById("button").toggleAttribute('hidden');
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:black;">
+
+<img id="randomImage" src="" title="tired but doing my best!">
+<script>
+    const images = [
+        'img/header.jpg',
+        'img/header2.png'
+    ];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById('randomImage').src = images[randomIndex];
+</script>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><u>Places To Find Me</u></h1>
+<h2 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;">Most Used: <a href="https://bsky.app/profile/golden.yuri.cool">Bluesky</a> | <a href="https://www.backloggd.com/u/GoldenLumia/">Backloggd</a> | <a href="https://steamcommunity.com/id/goldenlumia/">Steam</a></h2>
+<h2 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;">Additional Places: <a href="https://www.tumblr.com/blog/goldenlumia">Tumblr</a> | <a href="https://letterboxd.com/goldenlumia/">Letterboxd</a> | <a href="https://github.com/GoldenLumia">GitHub</a> | <a href="https://anilist.co/user/GoldenLumia/">Anilist</a></h2>
+<h3 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: italic;">(Discord available on request to people I know)</h3>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><u>Extra Stuff</u></h1>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><a href="https://steamcommunity.com/id/goldenlumia/myworkshopfiles/">Mods I've Made on Steam</a></h1>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><a href="https://golden.yuri.cool/bloodborne/">Bloodborne Checklist (Work in Progress)</a></h1>
+<h1 style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;"><a href="https://github.com/GoldenLumia/MouseInjectorDolphinDuck">Mouse Injector for Most Standard Emulators (with added Armored Core game support)</a></h1>
+<img src="img/rien_sang.gif"/>
+<br>
+<button onClick="toggleImage()" class="w-50 mb-10">Have you seen her?</button>
+
+<img src="img/seeher.png" id="image" class="hidden w-75"/>
+<h1 hidden id="button" style="color:white;font-family: Roboto,sans-serif;font-weight: 500;font-style: normal;">Now you have!</h1>
+<img src="img/our_lord.gif"/>
+<img src="img/chat_is_this_real.gif"/>
+</body>
+</html>
